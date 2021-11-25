@@ -4,6 +4,9 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import App from './App';
 import Weather from './components/Weather';
+import Covid from './components/Covid';
+import News from './components/News';
+import Foot from './components/Foot';
  
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -18,6 +21,9 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
   storiesOf('Music', module)
   .add('weather', () => <Weather/> )
+  .add('news' , () => <News/>)
+  .add('covid' , () => <Covid/> )
+  .add('foot' , () => <Foot/>)
 
   serviceWorker.unregister();
 

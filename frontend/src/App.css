@@ -26,11 +26,59 @@ li:hover{
   border-radius: 50px 
 }
 
-.event-container{
-  background-color: darkslategray;
+.covid-container{
+  background-color: white ;
+  padding: 10%;
+  border-radius: 50px;
+  border-color: red;
+  border-style: solid;
+}
+
+.news-container{
+  background-color: #213f77 ;
   padding: 5%;
   border-radius: 50px;
+}
+
+.article-container{
+  background-color: #f0e300;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.logo {
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.foot-container{
+  background-color: white ;
+  padding: 5%;
+  border-radius: 50px;
+  border-color: green;
   border-style: solid;
+}
+
+.photoMatch{
+  height: 250px;
+}
+
+.images-container{
+  background-color: #814169 ;
+  padding: 5%;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.images{
+  height: 185px;
+  text-align: center;
 }
 
 @media (max-width: 576px){

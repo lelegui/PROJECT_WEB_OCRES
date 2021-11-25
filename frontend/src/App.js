@@ -4,14 +4,55 @@ import Weather from "./components/Weather";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
+import Covid from "./components/Covid";
+import News from "./components/News";
+import Foot from "./components/Foot";
+import Images from "./components/Images";
 
 function Dashboard() {
   return (
     <div>
       <h1></h1>
       <Container>
+
         <Row>
+          <Col sm="1"></Col>
+          <Col xs="8" sm="10">
+            <News />
+            <br></br>
+            <br></br>
+          </Col>
           <Col sm="2"></Col>
+        </Row>
+
+        <Row>
+          <Col sm="1"></Col>
+          <Col xs="4" sm="4">
+            <Covid />
+            <br></br>
+            <br></br>
+          </Col>
+          <Col sm="1"></Col>
+          <Col xs="8" sm="5">
+            <Images />
+            <br></br>
+            <br></br>
+          </Col>
+          
+        </Row>
+
+        <Row>
+          <Col sm="1"></Col>
+          <Col xs="8" sm="10">
+            <Foot />
+            <br></br>
+            <br></br>
+          </Col>
+          <Col sm="2"></Col>
+        </Row>
+
+        <Row>
+          <Col sm="1"></Col>
           <Col xs="8" sm="10">
             <Weather />
             <br></br>

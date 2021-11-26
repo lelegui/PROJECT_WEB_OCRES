@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Weather from "./components/Weather";
+import logo from "./logo.png";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
@@ -8,6 +9,7 @@ import Covid from "./components/Covid";
 import News from "./components/News";
 import Foot from "./components/Foot";
 import Images from "./components/Images";
+
 
 function Dashboard() {
   return (
@@ -91,10 +93,13 @@ class App extends Component {
     return (
       <div>
         <header className="Font">
+          <div className="haut-page"><img src={logo} className="logo-news" alt="logo" /></div>
+        
           <Router>
             <Container>
               <div>
                 <Row>
+                  <Col sm="1"></Col>
                   <Col xs="12" sm="6">
                     <br></br>
                     <h4>

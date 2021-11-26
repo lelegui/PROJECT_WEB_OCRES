@@ -33,13 +33,13 @@ class News extends Component {
                 <Row>
                     <Col lg={8} md={6} xs={12}>
                     <img src="https://www.marketmakers.co.uk/wp-content/uploads/2020/01/460x215-TheGuardian-White-1.png" className="logo" alt="logo" />
-                        <h5><br></br>Titre: {this.state.titre}</h5>
+                        <h5><br></br>Title: {this.state.titre}</h5>
                     </Col>
                     <Col lg={4} md={4} xs={12}>
                             <p>Section: {this.state.section}</p>
                             <p>Date: {this.state.date}</p>
                         <div className="article-container">
-                            <p><a href = {this.state.article}>Consulter l'article</a></p>
+                            <p><a href = {this.state.article}>read the article</a></p>
                         </div>
                     </Col>
                 </Row>

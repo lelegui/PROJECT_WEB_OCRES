@@ -29,9 +29,9 @@ class Covid extends Component {
             <div>
                 <h2 className="py-3">Covid-19 in France</h2>
                 <div className="covid-container font-weight-bold">
-                <p>Pays: {this.state.pays}</p>
-                <p>Nombre de cas total: {this.state.total}</p>
-                <p>Nombre total de mort: {this.state.death}</p>
+                <p>Country: {this.state.pays}</p>
+                <p>Total number of cases: {this.state.total}</p>
+                <p>Total number of deaths: {this.state.death}</p>
                 <p>Ratio: {this.state.ratio}</p>
                 </div>
             </div>

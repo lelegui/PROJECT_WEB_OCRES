@@ -24,8 +24,18 @@ li:hover{
   text-align: center;
 }
 
+.button-dash{
+  background-color: #e4e8ff;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  border-radius: 50px;
+  text-align: center;
+}
+
 .logo-news {
-  height: 200px;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -43,6 +53,7 @@ li:hover{
   border-radius: 50px;
   border-color: red;
   border-style: solid;
+
 }
 
 .news-container{
@@ -81,9 +92,12 @@ li:hover{
 }
 
 .images-container{
-  background-color: #814169 ;
-  padding: 5%;
-  border-radius: 50px;
+  border-radius: 3.125em;
+  border-style: solid;
+  border-width: 0.063em;
+  border-color: #814169;
+  height: 15.7em;
+  width: 21.875em;
   text-align: center;
 }
 

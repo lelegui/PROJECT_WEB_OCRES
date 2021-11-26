@@ -33,16 +33,17 @@ class Foot extends Component {
                 
                 <div className="foot-container font-weight-bold">
                 <Row>
-                    <Col lg={6} md={6} xs={12}>
+                    <Col lg={7} md={6} sm={12} xs={12}>
                     <p>Clubs: {this.state.clubs}</p>
                     <p>Competition: {this.state.competition}</p>
                     <img src={this.state.image} className="photoMatch" alt="match"></img>
                     </Col>
-                    <Col lg={6} md={4} xs={12}>
+                    <Col lg={5} md={4} sm={12} xs={12}>
+                        <br></br>
                     <iframe id="Foot"
                         title="Resume foot"
-                        width="400"
-                        height="330"
+                        width="290"
+                        height="320"
                         src={this.state.resume}>
                     </iframe>
                     </Col>

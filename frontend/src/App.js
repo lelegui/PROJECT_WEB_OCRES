@@ -9,6 +9,7 @@ import Covid from "./components/Covid";
 import News from "./components/News";
 import Foot from "./components/Foot";
 import Images from "./components/Images";
+import Graph from './components/Graph';
 
 
 function Dashboard() {
@@ -19,7 +20,7 @@ function Dashboard() {
 
         <Row>
           <Col sm="1"></Col>
-          <Col xs="8" sm="10">
+          <Col xs="12" sm="10" lg="10">
             <News />
             <br></br>
             <br></br>
@@ -28,14 +29,14 @@ function Dashboard() {
         </Row>
 
         <Row>
-          <Col sm="1"></Col>
-          <Col xs="4" sm="4">
+        <Col sm="1"></Col>
+          <Col xs="12" sm="12" lg="5">
             <Covid />
             <br></br>
             <br></br>
           </Col>
           <Col sm="1"></Col>
-          <Col xs="8" sm="5">
+          <Col xs="12" sm="12" lg="5">
             <Images />
             <br></br>
             <br></br>
@@ -45,7 +46,7 @@ function Dashboard() {
 
         <Row>
           <Col sm="1"></Col>
-          <Col xs="8" sm="10">
+          <Col xs="12" sm="12" md="12" lg="10">
             <Foot />
             <br></br>
             <br></br>
@@ -55,13 +56,25 @@ function Dashboard() {
 
         <Row>
           <Col sm="1"></Col>
-          <Col xs="8" sm="10">
+          <Col xs="12" sm="10" lg="10">
             <Weather />
             <br></br>
             <br></br>
           </Col>
           <Col sm="2"></Col>
         </Row>
+
+        <Row>
+          <Col sm="1"></Col>
+          <Col xs="12" sm="10">
+            <h2 className="py-3">Presidential poll</h2>
+            <Graph />
+            <br></br>
+            <br></br>
+          </Col>
+          <Col sm="2"></Col>
+        </Row>
+
       </Container>
     </div>
   );
@@ -76,7 +89,7 @@ const routes = [
 
 // wrap <Route> and use this everywhere instead, then when
 // sub routes are added to any route it'll work
-function RouteWithSubRoutes(route) {
+function Routes(route) {
   return (
     <Route
       path={route.path}
@@ -94,26 +107,33 @@ class App extends Component {
       <div>
         <header className="Font">
           <div className="haut-page"><img src={logo} className="logo-news" alt="logo" /></div>
-        
+          
           <Router>
             <Container>
               <div>
                 <Row>
                   <Col sm="1"></Col>
-                  <Col xs="12" sm="6">
+                  <Col xs="12" sm="5">
                     <br></br>
                     <h4>
                       <Link to="/dashboard">
                         {" "}
-                        <div className="Select">Dashboard</div>
+                        <div className="button-dash"><div className="Select">Dashboard</div></div>
                       </Link>
+                    </h4>
+                    <br></br>
+                  </Col>
+                <Col xs="12" sm="5">
+                    <br></br>
+                    <h4>
+                        <div className="button-dash"><div className="Select">Formulaire</div></div>
                     </h4>
                     <br></br>
                   </Col>
                 </Row>
 
                 {routes.map((route, i) => (
-                  <RouteWithSubRoutes key={i} {...route} />
+                  <Routes key={i} {...route} />
                 ))}
               </div>
             </Container>

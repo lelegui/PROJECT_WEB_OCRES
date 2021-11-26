@@ -22,9 +22,7 @@ class Images extends Component {
         return (
             <div>
                 <h2 className="py-3">Images of the day</h2>
-                <div className="images-container font-weight-bold">
-                <img src={this.state.image} className="images" alt="Image"></img>
-                </div>
+                <img src={this.state.image} className="images-container" alt="Image"></img>
             </div>
         );
     }

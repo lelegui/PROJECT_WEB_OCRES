@@ -1,7 +1,6 @@
 import React from 'react';
 
 
-import { storiesOf } from '@storybook/react';
 import App from './App';
 import Weather from './components/Weather';
 import Covid from './components/Covid';
@@ -15,15 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-  storiesOf('App', module).add('La Base', () => 
-  <App />
-  ) ;
-
-  storiesOf('Music', module)
-  .add('weather', () => <Weather/> )
-  .add('news' , () => <News/>)
-  .add('covid' , () => <Covid/> )
-  .add('foot' , () => <Foot/>)
-
-  serviceWorker.unregister();
-
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();

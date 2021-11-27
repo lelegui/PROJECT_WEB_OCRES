@@ -10,6 +10,7 @@ import News from "./components/News";
 import Foot from "./components/Foot";
 import Images from "./components/Images";
 import Graph from './components/Graph';
+import Form from './components/Formulaire';
 
 
 function Dashboard() {
@@ -80,10 +81,23 @@ function Dashboard() {
   );
 }
 
+function Formulaire() {
+  return (
+    <div>
+      {" "}
+      <Form />
+    </div>
+  );
+}
+
 const routes = [
   {
     path: "/dashboard",
     component: Dashboard,
+  },
+  {
+    path: "/formulaire",
+    component: Formulaire,
   },
 ];
 
@@ -123,10 +137,12 @@ class App extends Component {
                     </h4>
                     <br></br>
                   </Col>
-                <Col xs="12" sm="5">
+                  <Col xs="12" sm="5">
                     <br></br>
                     <h4>
-                        <div className="button-dash"><div className="Select">Formulaire</div></div>
+                      <Link to="/formulaire">
+                        <div className="button-dash"><div className="Select">Poll</div></div>
+                      </Link>
                     </h4>
                     <br></br>
                   </Col>

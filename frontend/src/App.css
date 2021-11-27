@@ -88,7 +88,7 @@ li:hover{
 }
 
 .photoMatch{
-  height: 250px;
+  height: 200px;
 }
 
 .images-container{
@@ -103,6 +103,10 @@ li:hover{
 
 .images{
   height: 185px;
+  text-align: center;
+}
+
+.center{
   text-align: center;
 }
 

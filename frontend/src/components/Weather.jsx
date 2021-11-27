@@ -37,29 +37,44 @@ class Weather extends Component {
                 
                 <Row className="weather-container text-center">
                     <Col lg={{size: 2, offset:1}} md={4} xs={12}>
-                        <h5 className="text-light font-weight-bold">TEMPERATURE</h5>
-                        <br/>
-                        <h3 className="text-light font-weight-bold">{this.state.temperature}°C</h3>
+                        <div className="center">
+                            <h5 className="text-light font-weight-bold">TEMPERATURE</h5>
+                            <br/><br/>
+                            <h3 className="text-light font-weight-bold">{this.state.temperature}°C</h3>
+                        </div>
+                        
                     </Col>
                     <Col lg={2} md={4} xs={12}>
-                        <h5 className="text-light font-weight-bold">CITY</h5>
-                        <br/>
-                        <h3 className="text-light font-weight-bold">{this.state.city}</h3>
+                        <div className="center">
+                            <h5 className="text-light font-weight-bold">CITY</h5>
+                            <br/><br/>
+                            <h3 className="text-light font-weight-bold">{this.state.city}</h3>
+                        </div>
+                        
                     </Col>
                     <Col lg={2} md={4} xs={12}>
-                        <h5 className="text-light font-weight-bold">COUNTRY</h5>
-                        <br/>
-                        <h3 className="text-light font-weight-bold">{this.state.country}</h3>
+                        <div className="center">
+                            <h5 className="text-light font-weight-bold">COUNTRY</h5>
+                            <br/><br/>
+                            <h3 className="text-light font-weight-bold">{this.state.country}</h3>
+                        </div>
+                        
                     </Col>
                     <Col lg={{size: 2, offset: 0}} md={{size: 4, offset:2}} xs={12}>
-                        <h5 className="text-light font-weight-bold">HUMIDITY</h5>
-                        <br/>
-                        <h3 className="text-light font-weight-bold">{this.state.humidity}%</h3>
+                        <div className="center">
+                            <h5 className="text-light font-weight-bold">HUMIDITY</h5>
+                            <br/><br/>
+                            <h3 className="text-light font-weight-bold">{this.state.humidity}%</h3>
+                        </div>
+                        
                     </Col>
                     <Col lg={2} md={4} xs={12}>
-                        <h5 className="text-light font-weight-bold">DESCRIPTION</h5>
-                        <h4 className="text-light font-weight-bold">{this.state.icone}</h4>
-                        <h4 className="text-light font-weight-bold">{this.state.description}</h4>
+                        <div className="center">
+                            <h5 className="text-light font-weight-bold">DESCRIPTION</h5>
+                            <h4 className="text-light font-weight-bold">{this.state.icone}</h4>
+                            <h4 className="text-light font-weight-bold">{this.state.description}</h4>
+                        </div>
+                        
                     </Col>
                 </Row>
             </div>

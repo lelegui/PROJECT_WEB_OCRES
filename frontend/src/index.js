@@ -2,10 +2,6 @@ import React from 'react';
 
 
 import App from './App';
-import Weather from './components/Weather';
-import Covid from './components/Covid';
-import News from './components/News';
-import Foot from './components/Foot';
  
 import ReactDOM from 'react-dom';
 import './index.css';

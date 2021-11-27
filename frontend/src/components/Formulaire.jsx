@@ -1,77 +1,58 @@
-import React, { PureComponent } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import React, { Component } from 'react';
+import { Form, FormGroup, Label, Input, Button, Row, Col } from 'reactstrap';
 
-const data = [
-  {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    name: 'Page D',
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: 'Page F',
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-];
 
-export default class Example extends PureComponent {
-  static demoUrl = 'https://codesandbox.io/s/bar-chart-has-no-padding-jphoc';
+class Forms extends Component {
+    state = {
+        city: ''
+    }
 
-  render() {
-    return (
-      <ResponsiveContainer width="100%" height="100%">
-        <BarChart
-          width={500}
-          height={300}
-          data={data}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-          barSize={20}
-        >
-          <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <CartesianGrid strokeDasharray="3 3" />
-          <Bar dataKey="pv" fill="#8884d8" background={{ fill: '#eee' }} />
-        </BarChart>
-      </ResponsiveContainer>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <h3 className="py-3">Presidential poll</h3>
+                <Form>
+                    <FormGroup row>
+                        <Label for="formCity" sm={12}>City</Label>
+                        <Col xs={12} sm={10} md={8} lg={6}>
+                        <Input
+                            type="text"
+                            name="city"
+                            id="formCity"
+                            placeholder="City"
+                            value={this.state.city}
+                            onChange={e => this.setState({ city: e.target.value })} />
+                        </Col>
+                        </FormGroup>
+                    <FormGroup row>
+                        <Label for="exampleSelect" sm={12}>Your Age</Label>
+                        <Col xs={12} sm={10} md={8} lg={6}>
+                            <Input type="select" name="select" id="exampleSelect"  onChange={this.onLevelSelectChange}>
+                                <option value="4" >18-25</option>
+                                <option value="3" >26-45</option>
+                                <option value="2" >46-65</option>
+                                <option value="1" >66 et plus</option>
+                            </Input>
+                        </Col>
+                    </FormGroup>
+                    <FormGroup row>
+                        <Label for="exampleSelect" sm={12}>Which President</Label>
+                        <Col xs={12} sm={10} md={8} lg={6}>
+                            <Input type="select" name="select" id="exampleSelect"  onChange={this.onLevelSelectChange}>
+                                <option value="4" >President 1</option>
+                                <option value="3" >President 2</option>
+                                <option value="2" >President 3</option>
+                                <option value="1" >President 4</option>
+                            </Input>
+                        </Col>
+                    </FormGroup>
+                    <div><br></br></div>
+                    <Button>Submit</Button>
+                    <div><br></br><br></br></div>
+                </Form>
+            </div>
+        );
+    }
 }
+
+export default Forms;

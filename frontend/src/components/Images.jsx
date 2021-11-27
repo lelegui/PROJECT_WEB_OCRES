@@ -21,7 +21,7 @@ class Images extends Component {
     render() {
         return (
             <div>
-                <h2 className="py-3">Images of the day</h2>
+                <h3 className="py-3">Images of the day</h3>
                 <img src={this.state.image} className="images-container" alt="Image"></img>
             </div>
         );

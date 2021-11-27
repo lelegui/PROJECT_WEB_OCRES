@@ -68,7 +68,7 @@ function Dashboard() {
         <Row>
           <Col sm="1"></Col>
           <Col xs="12" sm="10">
-            <h2 className="py-3">Presidential poll</h2>
+            <h3 className="py-3">Presidential poll</h3>
             <Graph />
             <br></br>
             <br></br>

@@ -33,7 +33,7 @@ class Weather extends Component {
     render() {
         return (
             <div>
-                <h2 className="py-3">Weather</h2>
+                <h3 className="py-3">Weather</h3>
                 
                 <Row className="weather-container text-center">
                     <Col lg={{size: 2, offset:1}} md={4} xs={12}>
@@ -48,7 +48,7 @@ class Weather extends Component {
                         <div className="center">
                             <h5 className="text-light font-weight-bold">CITY</h5>
                             <br/><br/>
-                            <h3 className="text-light font-weight-bold">{this.state.city}</h3>
+                            <h4 className="text-light font-weight-bold">{this.state.city}</h4>
                         </div>
                         
                     </Col>
@@ -56,7 +56,7 @@ class Weather extends Component {
                         <div className="center">
                             <h5 className="text-light font-weight-bold">COUNTRY</h5>
                             <br/><br/>
-                            <h3 className="text-light font-weight-bold">{this.state.country}</h3>
+                            <h4 className="text-light font-weight-bold">{this.state.country}</h4>
                         </div>
                         
                     </Col>
@@ -64,7 +64,7 @@ class Weather extends Component {
                         <div className="center">
                             <h5 className="text-light font-weight-bold">HUMIDITY</h5>
                             <br/><br/>
-                            <h3 className="text-light font-weight-bold">{this.state.humidity}%</h3>
+                            <h4 className="text-light font-weight-bold">{this.state.humidity}%</h4>
                         </div>
                         
                     </Col>

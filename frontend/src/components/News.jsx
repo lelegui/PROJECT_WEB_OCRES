@@ -14,7 +14,7 @@ class News extends Component {
     }
 
     getNews = async () => {
-        const api_call = await fetch('https://content.guardianapis.com/search?page=2&q=debate&api-key=test');
+        const api_call = await fetch('https://content.guardianapis.com/search?api-key=c53dc4fe-24fd-4208-b11f-b2bad8381d54');
         const data = await api_call.json();
         console.log(data);
         this.setState({
@@ -28,7 +28,7 @@ class News extends Component {
     render() {
         return (
             <div>
-                <h2 className="py-3">Article - The Guardian</h2>
+                <h3 className="py-3">Article - The Guardian</h3>
                 <div className="news-container font-weight-bold text-light">
                 <Row>
                     <Col lg={8} md={6} xs={12}>

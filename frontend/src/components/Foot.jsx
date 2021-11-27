@@ -29,7 +29,7 @@ class Foot extends Component {
     render() {
         return (
             <div>
-                <h2 className="py-3">Football</h2>
+                <h3 className="py-3">Football</h3>
                 
                 <div className="foot-container font-weight-bold">
                 <Row>

@@ -27,7 +27,7 @@ class Covid extends Component {
     render() {
         return (
             <div>
-                <h2 className="py-3">Covid-19 in France</h2>
+                <h3 className="py-3">Covid-19 in France</h3>
                 <div className="covid-container font-weight-bold">
                 <p>Country: {this.state.pays}</p>
                 <p>Total number of cases: {this.state.total}</p>

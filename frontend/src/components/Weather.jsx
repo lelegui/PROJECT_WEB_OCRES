@@ -1,27 +1,26 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'reactstrap';
 
-const API = "ac156d7e0497ba1cd37142f49280cc88"
-
 class Weather extends Component {
     constructor(props){
         super(props);
         this.state = {
-            temperature: undefined,
+            temp: undefined,
             city: undefined,
             country: undefined,
             humidity: undefined,
-            description: undefined
+            description: undefined,
+            icone: undefined
         }
         this.getWeather();
     }
 
     getWeather = async () => {
-        const api_call = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Paris,fr&appid=' + API +'&units=metric');
+        const api_call = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Paris,fr&appid=ac156d7e0497ba1cd37142f49280cc88&units=metric');
         const data = await api_call.json();
-        console.log(this.state.code);
+        console.log(data);
         this.setState({
-            temperature: data.main.temp,
+            temp: data.main.temp,
             city: data.name,
             country: data.sys.country,
             humidity: data.main.humidity,
@@ -40,7 +39,7 @@ class Weather extends Component {
                         <div className="center">
                             <h5 className="text-light font-weight-bold">TEMPERATURE</h5>
                             <br/><br/>
-                            <h3 className="text-light font-weight-bold">{this.state.temperature}°C</h3>
+                            <h3 className="text-light font-weight-bold">{this.state.temp}°C</h3>
                         </div>
                         
                     </Col>

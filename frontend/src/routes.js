@@ -1,15 +1,21 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+import Covid from './components/Covid';
+import Foot from './components/Foot';
+import Formulaire from './components/Formulaire';
+import Graph from './components/Graph';
+import Images from './components/Images';
+import News from './components/News';
 import Weather from './container/Weather';
-import Caldr from './container/Calendar';
-import Data from './container/Data';
-import Forms from './container/Forms';
 
 export default () => (
     <Switch>
-        <Route path="/" exact component={Data} />
-        <Route path="/calendar" exact component={Caldr} />
-        <Route path="/weather" exact component={Weather} />
-        <Route path="/form" exact component={Forms} />
+        <Route path="/Covid" exact component={Covid} />
+        <Route path="/Foot" exact component={Foot} />
+        <Route path="/Formulaire" exact component={Formulaire} />
+        <Route path="/GRaph" exact component={Graph} />
+        <Route path="/Images" exact component={Images} />
+        <Route path="/News" exact component={News} />
+        <Route path="/Weather" exact component={Weather} />
     </Switch>
 );

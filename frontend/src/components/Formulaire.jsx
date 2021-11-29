@@ -28,10 +28,10 @@ class Forms extends Component {
                         <Label for="exampleSelect" sm={12}>Your Age</Label>
                         <Col xs={12} sm={10} md={8} lg={6}>
                             <Input type="select" name="select" id="exampleSelect"  onChange={this.onLevelSelectChange}>
-                                <option value="4" >18-25</option>
-                                <option value="3" >26-45</option>
-                                <option value="2" >46-65</option>
-                                <option value="1" >66 et plus</option>
+                                <option value="1" >18-25</option>
+                                <option value="2" >26-45</option>
+                                <option value="3" >46-65</option>
+                                <option value="4" >66 et plus</option>
                             </Input>
                         </Col>
                     </FormGroup>
@@ -39,10 +39,10 @@ class Forms extends Component {
                         <Label for="exampleSelect" sm={12}>Which President</Label>
                         <Col xs={12} sm={10} md={8} lg={6}>
                             <Input type="select" name="select" id="exampleSelect"  onChange={this.onLevelSelectChange}>
-                                <option value="4" >President 1</option>
-                                <option value="3" >President 2</option>
-                                <option value="2" >President 3</option>
-                                <option value="1" >President 4</option>
+                                <option value="1" >President 1</option>
+                                <option value="2" >President 2</option>
+                                <option value="3" >President 3</option>
+                                <option value="4" >President 4</option>
                             </Input>
                         </Col>
                     </FormGroup>

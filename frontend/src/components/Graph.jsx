@@ -34,10 +34,10 @@ class Graph extends PureComponent {
     return (
       <ResponsiveContainer width="100%" height="75%">
         <BarChart
-          width={500}
-          height={300}
-          data={data}
-          margin={{
+            width={500}
+            height={300}
+            data={data}
+            margin={{
             top: 5,
             right: 30,
             left: 20,
